@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>Fast Food</title>
+<head>
+	<link rel="stylesheet" href="file:///C:/xampp/htdocs/food/css/lay.css">
+	<link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="file:///C:/xampp/htdocs/food/css/log.css">
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" charset="UTF-8"></script></head>
+  <body>
+  	<div class="gps">
+  		<center><img src="C:\xampp\htdocs\food\img\Gps\avatar.png"height="42" width="42">:ตัดพี่ตัดน้อง <br></center><left>รายละเอียดการจัดส่ง:รัฐสภา</left>
+  	</div>
+  	<div class="map">
+	<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1LKZ1qKAfhB6eo_Yf3jw9oiTLG9zERE36" callback=initMap width=100% height="500"></iframe>
+	</div><br>
+	<div class="gps-paper">
+					<button class="boxgroupwork-employee" onclick="document.getElementById('id01').style.display='block'"><img src="C:\xampp\htdocs\food\img\Gps\phone.png"height="42" width="42" >Phone</button>
+					<div id="id01" class="modal">
+  						<form class="modal-content-gps animate" action="/action_page.php">
+    					<div class="imgcontainer">
+      					<span onclick="document.getElementById('id01').style.display='none'" class="closegps" title="Close Modal">&times;</span>
+    					</div>
+
+    					<div class="container">
+     					 	0897406019
+    					</div>
+						<div class="container" style="background-color:#f1f1f1">
+   				    	</div>
+  						</form>
+					</div>
+				<button class="boxgroupwork-employee" onclick="document.getElementById('id02').style.display='block'"><img src="C:\xampp\htdocs\food\img\Gps\order.png"height="42" width="42" >Detail</button>
+					<div id="id02" class="modal">
+						<form class="modal-content-gps animate" action="/action_page.php">
+    					<div class="imgcontainer">
+      					<span onclick="document.getElementById('id02').style.display='none'" class="closegps" title="Close Modal">&times;</span>
+    					</div>
+
+    					<div class="container">
+     					 	ร้านโอยั๊วะ<br>
+     					 	รายการอาหาร<br>
+     					 	-ข้าวผัดปู<br>
+     					 	-ต้มยำกุ้ง<br>
+     					 	ราคา :TH 300 บาท
+    					</div>
+						<div class="container" style="background-color:#f1f1f1">
+   				    	</div>
+  						</form>
+					</div>
+				<button class ="boxgroupwork-employee" href=""><img src="C:\xampp\htdocs\food\img\Gps\come.png"height="42" width="42" >ฉันมาถึงแล้ว</button>
+				<a href="C:\xampp\htdocs\food\gps\gps.html">
+					<button class ="boxgroupwork-employee" href=""><img src="C:\xampp\htdocs\food\img\Gps\cancel.png"height="42" width="42" > ยกเลิกงาน</button>
+				</a>
+	</div>
+	</div>
+	<div>
+	</div>
+	<div class="gps"></div>
+	<script src="js/log.js"></script>
+</body>
+</html>

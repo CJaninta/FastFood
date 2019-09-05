@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 10px;
+  }
+  .header {
+    text-align: center;
+    background:url(../img/top.png);
+    background-size:cover;
+    width:100%; 
+    height: 200px;
+  }
+
+  .topnav {
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(245, 217, 93);
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    position: sticky;
+    top:0;
+  }
+
+  .topnav a{
+    float: left;
+    display: block;
+    color: #150685;
+    text-align: left;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+
+  .topnav a:hover{
+    background-color: rgb(29, 24, 78);
+    color: rgb(255, 255, 255);
+  }
+
+  @media (min-width:600px){
+    .header{
+        width: 100%;
+    }
+    .topnav{
+        width: 100%;
+    }
+  }
+  .login{
+    float: right;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    background-color: rgb(41, 172, 5);
+    cursor:pointer;
+    font-family: 'Kanit', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    border: 2px solid #f8f8f8;
+    margin: 1px;
+  }
+  .login a{
+    color: #f8f8f8;
+  }
+  .login a:hover {
+    background-color: rgb(15, 49, 2);
+    color: #f7f7f7;
+  }
+  .logtext{
+    padding: 10px 10px;
+    float: right;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color:rgb(41, 172, 5);
+  }

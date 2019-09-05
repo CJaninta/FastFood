@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="http://localhost/food/css/lay.css">
+    <link rel="stylesheet" href="http://localhost/food/css/log.css">
+    <link rel="stylesheet" href="http://localhost/food/css/menu.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Oyua</title>
+</head>
+
+<body>
+    <div class="header">
+        <center><a href="http://localhost/food/index.php"><img src="http://localhost/food/img/logo.png"
+                    width="230" height="230"></a></center>
+    </div>
+
+    <div class="topnav">
+        <a href="http://localhost/food/index.php">หน้าแรก</a>
+        <a href="http://localhost/food/promotion.html">โปรโมชั่น</a>
+        <a href="http://localhost/food/his.html">ประวัติการสั่ง</a>
+        <a href="">บัญชี</a>
+        <div class="login">
+            <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">พนักงาน</a>
+        </div>
+        <div class="login">
+            <a onclick="document.getElementById('idf').style.display='block'" style="width:auto;">ผู้ใช้บริการ</a>
+        </div>
+        <div class="logtext">
+            Login
+        </div>
+    </div>
+    <div class="mpaper">
+        <h1 style="display: inline">โอยั๊วะ รีเวอร์เทอเรส</h1>
+        <h4><i class="material-icons" style='font-size:20px;color: rgb(29, 192, 7)'>stars</i>ร้านแนะนำ</h4>
+        <div class="mbox">
+            <img src="http://localhost/food/img/menu/m1.jpg" width="100%" height="220">
+        </div>
+        <div class="mbox">
+            <h2>เเกงส้มชะอมไข่-กุ้งสด</h2>
+            <h3 style="display: inline">ราคา</h3>
+            <h2 style="display: inline;color:rgb(0, 170, 0)">126</h2>
+            <h3 style="display: inline">บาท</h3>
+            <h4 style="display: inline"><i class="fas fa-tags" style='font-size:20px;color: rgb(29, 192, 7)'></i>
+                โปรโมชั่น</h4>
+            <h3>จำนวน</h3>
+            <button class="btm btm1" onclick="mydel2()">-</button>
+            <h5 style="display: inline" id="am2">1</h5>
+            <button class="btm btm1" onclick="myadd2()">+</button><br><br>
+            <button class="btmm btmm1">สั่งซื้อ</button>
+        </div>
+        <div class="mbox">
+            <img src="http://localhost/food/img/menu/m2.jpg" width="100%" height="220">
+        </div>
+        <div class="mbox">
+            <h2>ต้มยำขาหมู</h2>
+            <h3 style="display: inline">ราคา</h3>
+            <h2 style="display: inline">120</h2>
+            <h3 style="display: inline">บาท</h3>
+            <h3>จำนวน</h3>
+            <button class="btm btm1" onclick="mydel()">-</button>
+            <h5 style="display: inline" id="am">1</h5>
+            <button class="btm btm1" onclick="myadd()">+</button><br><br>
+            <button class="btmm btmm1">สั่งซื้อ</button>
+        </div>
+    </div>
+    <div id="idf" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="log">
+                <div class="log1">
+                    <span onclick="document.getElementById('idf').style.display='none'" class="close"
+                        title="Close">&times;</span>
+                    <center><i class='fas fa-address-card' style='font-size:60px;color:rgb(255, 88, 10)'></i>
+                        ผู้ใช้บริการ</center>
+                    <div class="container">
+                        <label for="uname"><b><i class="material-icons"
+                                    style='font-size:20px;color:rgb(5, 5, 5)'>&#xe0be;</i> Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="uname" required>
+
+                        <label for="psw"><b><i class='fas fa-key' style='font-size:20px;color:rgb(12, 12, 12)'></i>
+                                Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <br><br>
+                        <buttonl type="submit">Login</buttonl>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <br>
+                    <buttonl type="button" onclick="window.location.href='http://localhost/food/register.php'"
+                        style="background-color: rgb(255, 0, 0);">Sign Up</buttonl>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="log">
+                <div class="log1">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close">&times;</span>
+                    <center><i class='fas fa-address-card' style='font-size:60px;color:rgb(22, 30, 153)'></i> พนักงาน</center>
+                    <div class="container">
+                        <label for="uname"><b><i class="material-icons"
+                                    style='font-size:20px;color:rgb(5, 5, 5)'>&#xe0be;</i> Email</b></label>
+                        <input type="text" placeholder="Enter Email" name="uname" required>
+
+                        <label for="psw"><b><i class='fas fa-key' style='font-size:20px;color:rgb(12, 12, 12)'></i>
+                                Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <br><br>
+                        <buttonl type="submit">Login</buttonl>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <br>
+                    <buttonl type="button" onclick="window.location.href='http://localhost/food/register2.php'"
+                        style="background-color: rgb(255, 0, 0);">Sign Up</buttonl>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="http://localhost/food/js/amount.js"></script>
+    <script src="http://localhost/food/js/log.js"></script>
+</body>
+
+</html>

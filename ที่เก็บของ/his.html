@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Fast Food</title>
+    <link rel="stylesheet" href="css/lay.css">
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/rec.css">
+    <link rel="stylesheet" href="css/log.css">
+    <link rel="stylesheet" href="css/his.css">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+
+<body>
+
+    <div class="header">
+        <center><a href="index.php"><img src="img/logo.png" width="230" height="230"></a></center>
+    </div>
+
+    <div class="topnav">
+        <a href="index.php">หน้าแรก</a>
+        <a href="promotion.html">โปรโมชั่น</a>
+        <a href="">ประวัติการสั่ง</a>
+        <a href="">บัญชี</a>
+        <div class="login">
+            <a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">พนักงาน</a>
+        </div>
+        <div class="login">
+            <a onclick="document.getElementById('idf').style.display='block'" style="width:auto;">ผู้ใช้บริการ</a>
+        </div>
+        <div class="logtext">
+            Login
+        </div>
+    </div>
+    <div class="hispaper">
+        <center>
+             <h2 style="float:left"><i class='fas fa-history' style='font-size:48px'></i> ประวัติการสั่ง </h2>
+         </center><br><br><br><br><br>
+        
+    </div>
+    <div id="idf" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="log">
+                <div class="log1">
+                    <span onclick="document.getElementById('idf').style.display='none'" class="close"
+                        title="Close">&times;</span>
+                    <center><i class='fas fa-address-card' style='font-size:60px;color:rgb(255, 88, 10)'></i>   ผู้ใช้บริการ</center>
+                <div class="container">
+                    <label for="uname"><b><i class="material-icons" style='font-size:20px;color:rgb(5, 5, 5)'>&#xe0be;</i> Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="uname" required>
+
+                    <label for="psw"><b><i class='fas fa-key' style='font-size:20px;color:rgb(12, 12, 12)'></i> Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <br><br>
+                    <buttonl type="submit">Login</buttonl>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember">  Remember me
+                    </label>
+                </div>
+                    <br>
+                    <buttonl type="button" onclick="window.location.href='register.php'" style="background-color: rgb(255, 0, 0);">Sign Up</buttonl>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="log">
+                <div class="log1">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close">&times;</span>
+                    <center><i class='fas fa-address-card' style='font-size:60px;color:rgb(22, 30, 153)'></i> พนักงาน</center>
+                <div class="container">
+                    <label for="uname"><b><i class="material-icons" style='font-size:20px;color:rgb(5, 5, 5)'>&#xe0be;</i> Email</b></label>
+                    <input type="text" placeholder="Enter Email" name="uname" required>
+
+                    <label for="psw"><b><i class='fas fa-key' style='font-size:20px;color:rgb(12, 12, 12)'></i> Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <br><br>
+                    <buttonl type="submit">Login</buttonl>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember">  Remember me
+                    </label>
+                </div>
+                    <br>
+                    <buttonl type="button" onclick="window.location.href='register2.php'" style="background-color: rgb(255, 0, 0);">Sign Up</buttonl>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/log.js"></script>
+</body>
+
+</html>

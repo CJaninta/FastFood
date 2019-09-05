@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+.tbox{
+    padding:20px;
+    width: 50%;
+    height: 350px;
+    float: left;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+.tpaper{
+    padding:50px;
+    width:100%; 
+    height: 950px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+}
+h1{
+    font-family: 'Kanit', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: rgb(8, 60, 173);
+}
+
+h2{
+    font-family: 'Kanit', sans-serif;
+    font-size: 24px;
+    font-weight: 650;
+    color:rgb(240, 116, 1);
+}
+
+
+h3{
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(119, 117, 117);
+}
+h4{
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color:rgb(14, 138, 2);
+}
+img{
+    border-radius: 20px;
+}
+ad{
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+@media (min-width:600px){
+    .tpaper{
+        width: 100%;
+        padding:50px;
+    }
+    .tbox{
+        width: 25%;
+    }
+}
